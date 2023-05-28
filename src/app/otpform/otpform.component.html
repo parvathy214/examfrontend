@@ -1,0 +1,18 @@
+
+<div class="screen"  >
+    <div class="container">
+        <div class="row justify-content-center mt-2 pt-5  ">
+            <div class="col-6">
+              <form #userlogin="ngForm" (ngSubmit)="Verify()">
+                <h3 style="text-align: center;color: #968f8f;">OTP FORM</h3> <br><br>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Enter OTP</label> <br> <br>
+                  <input type="email" class="form-control" id="exampleInputOtp" aria-describedby="emailHelp" name="otp" [(ngModel)]="User.otp" #otp="ngModel"  placeholder="Enter OTP">
+                </div><br> <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
